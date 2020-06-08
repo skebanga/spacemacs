@@ -512,14 +512,15 @@ ADDITIONAL-WIDGETS: a function for inserting a widget under the frame."
                                       'subtree))
                            :mouse-face 'highlight
                            :follow-link "\C-m")))))
-    (spacemacs-buffer//notes-insert-note (concat spacemacs-release-notes-directory
-                                                 spacemacs-buffer-version-info
-                                                 ".txt")
-                                         (format "Important Notes (Release %s.x)"
-                                                 spacemacs-buffer-version-info)
-                                         "Update your dotfile (SPC f e D) and\
- packages after every update"
-                                         widget-func))
+ ;;    (spacemacs-buffer//notes-insert-note (concat spacemacs-release-notes-directory
+ ;;                                                 spacemacs-buffer-version-info
+ ;;                                                 ".txt")
+ ;;                                         (format "Important Notes (Release %s.x)"
+ ;;                                                 spacemacs-buffer-version-info)
+ ;;                                         "Update your dotfile (SPC f e D) and\
+ ;; packages after every update"
+ ;;                                         widget-func)
+    )
   (setq spacemacs-buffer--release-note-version nil)
   (spacemacs/dump-vars-to-file '(spacemacs-buffer--release-note-version)
                                spacemacs-buffer--cache-file))
