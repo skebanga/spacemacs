@@ -47,7 +47,9 @@
     (spacemacs/set-leader-keys-for-major-mode 'helpful-mode
       (kbd "q") 'helpful-kill-buffers)
     (evil-define-key 'normal helpful-mode-map (kbd "gr") 'helpful-update)
-    (evil-define-key 'normal helpful-mode-map (kbd "q") 'quit-window)))
+    (evil-define-key 'normal helpful-mode-map (kbd "q") 'quit-window)
+    (evil-define-key 'normal helpful-mode-map (kbd "<escape>") 'quit-window)
+    ))
 
 (defun helpful/post-init-link-hint ()
   (with-eval-after-load 'helpful
