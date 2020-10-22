@@ -426,6 +426,7 @@
   "hdv" 'describe-variable
   "hI"  'spacemacs/report-issue
   "hn"  'view-emacs-news
+  "hh"  'view-lossage
   "hPs" 'profiler-start
   "hPk" 'profiler-stop
   "hPr" 'profiler-report
